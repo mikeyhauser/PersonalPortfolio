@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+<!-- header of the page including title -->
+    <title>Personal Porfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <!--In this header I included a picture I made for a background, and two text lines with a gradient  -->
+      <h1>Mikey Hauser</h1>
+      <h1>Personal Portfolio</h1>
+    </header>
+<!-- In this nav bar i included buttons that link to various id portions of the page. It might make more sense as time goes on and the sections get longer, for now the page is so small its a little redundant -->
+    <nav>
+      <p>What Can I Do?</p>
+    </nav>
+  <!--  -->
+    <nav>
+      <a href="#mechanical">Mechanical</a>
+      <a href="#coding">Coding</a>
+      <a href="#woodworking">Woodworking</a>
+      <a href="#resume">Resume</a>
+    </nav>
+
+    <main>
+      <!-- The aside has my picture and contact, it flexes into a column as the screen shrinks -->
+      <aside>
+        <h2>Mikey Hauser</h2>
+        <p>ASE Master Tech <br>
+          Computer Science Student
+        </p>
+        <div class="mikey"></div>
+        <p>
+          <a href = "mailto: abc@example.com">mikeyhauser@gmail.com</a>
+        </p>
+      </aside>
+
+      <section>
+        <!-- In each category i included text and pictures that open into a full picture in a separate tab. In the coding section I made the hover feature make the image larger so the viewer can understand what they are looking at before clicking   -->
+        <h2 id="mechanical">Mechanical: I Can Fix That Engine!</h2>
+        <p>For over a decade I have repaired engines, both diesel and gasoline, in an array of industries. From agricultural and trucking equipment in Orange County, NC, to buses and tourism boats in the Galapagos Islands, the world of mechanical repair has been kind in providing me with a myriad of opportunity to disassemble equipment and fix it. Whether in the field or in a workshop, every mechanical breakdown is a valuable chance to plumb the depths of critical thinking. I owe every shattered bearing my gratitude for connecting me in the web of society.</p>
+    <!-- in the flex container, I have put in pictures. the href is what the button links to, and the img src is the button itself -->
+
+        <div class="flex-container">        
+          <div class="woodMetal"> <a href="./Assets/injectors.jpg" target="_blank"><img src="./Assets/injectors.jpg" alt="" srcset=""></a></div>
+          <div class="woodMetal"> <a href="./Assets/pumpkin.jpg" target="_blank"><img src="./Assets/pumpkin.jpg" alt="" srcset=""></a></div>
+          </div>
+
+
+        <h2 id="coding">CODING: I Can Program That Computer!</h2>
+        <p>
+          I have started on a path as a computer programmer by pursuing both a degree in computer science and a coding bootcamp. This Professional Portfolio page you are currently navigating is constructed with HTML and CSS. It is the first project I have created from scratch in the coding bootcamp. The code for this projects is linked below through the images.
+        </p>
+        <div class="flex-container">        
+        <div class="coding"> <a href="./Assets/htmlfirst.pdf" target="_blank"><img src="./Assets/html.jpg" alt="" srcset=""></a></div>
+        <div class="coding"> <a href="./Assets/cssfirst.pdf" target="_blank"><img src="./Assets/cssfirst.jpg" alt="" srcset=""></a></div>
+      </div>
+
+   
+        <h2 id="woodworking">For The Love Woodworking!</h2>
+        <p>After a year and a half of designing and building my own house, people around me have noticed that I have a natural ability to work wood. I enjoy taking fallen trees or old wood and using tools to make them into furniture, geometric shapes, or custom trim for a house. If you have some fancy wood you’d like to incorporate into a creative project, share that dream with me and the chances are I have the tools and skills to make it happen!</p>
+        <div class="flex-container">        
+          <div class="woodMetal"> <a href="./Assets/window.jpg" target="_blank"><img src="./Assets/window.jpg" alt="" srcset=""></a></div>
+          <div class="woodMetal"> <a href="./Assets/lamps.jpg" target="_blank"><img src="./Assets/lamps.jpg" alt="" srcset=""></a></div>
+          <div class="woodMetal"> <a href="./Assets/frameWeb.jpg" target="_blank"><img src="./Assets/frameWeb.jpg" alt="" srcset=""></a></div> 
+          </div>
+        <h2 id="resume">
+          <!-- at the end I have included a resume link -->
+          <a href="./Assets/MHweb.pdf" target="_blank">MY RESUME</a>
+        </h2>
+      </section>
+     
+    </main>
+
+    <footer>
+      <h3>
+       
+      </h3>
+    </footer>
+  </body>
+</html>
