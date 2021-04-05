@@ -3,7 +3,7 @@
 
 body {
   font-family: Arial;
- 
+  background-color: rgb(120, 121, 116);
   margin: 0;
 }
 /* sets the style for the header with the jpg in the background, cover size shifts it slightly when changing the size of the page.  */
@@ -19,18 +19,23 @@ header {
 /* here i made some linear gradients that fade to clear */
 h1{
    color: rgb(249, 250, 238);
-   background-image: linear-gradient(to right, rgba(255,0,0,.4), rgba(255,0,0,.05));
+   background-image: linear-gradient(to right, rgba(227, 215, 189, 0.507), rgba(255,0,0,.05));
    
+}
+h5{
+ 
+  background-image: linear-gradient(to right, rgba(172, 184, 140, 0.4), rgba(255,0,0,.05));
+  
 }
 
 /* the nav bar gradients are set similar to the h1. flex is set so it can adjust to changing screen sizes */
 nav {
-  display: flex;
-  background-image: linear-gradient(to right, rgba(115, 96, 131, 0.4), rgba(255,0,0,.05));
+
+  background-image: linear-gradient(to right, rgba(211, 208, 201, 0.4), rgba(255,0,0,.05));
 }
 
 nav a {
-  color: #13293d;
+  color: #D3D0C9;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -71,6 +76,7 @@ section {
 
 }
 
+
 /* here the flex container is defined for the pictures. space between sets the spacing between the pictures and not on the sides */
 .flex-container {
 
@@ -88,15 +94,16 @@ justify-content: space-between;
   transition: all 500ms ease-in;
 }
 /* the hover feature causes the images to jump out if the user wants a closer look */
-.coding img:hover {
-  position: relative; top: 0; left: 0; right: 0; bottom: 0;
-  transform: scale(4.25);
+/* .coding img:hover { */
+  /* position: static; top: ; left: 0; right: 0; bottom: 0;
+  transform: scale(4.25); */
+  
   /* background-image: url("html.jpg");  */
   /* background-repeat: no-repeat; */
   /* background-position:  center;  */
   /* background-size: cover; */
 
-}
+/* } */
 /* woodmetal style is set for the pictures in woodworking */
 .woodMetal img {
 
@@ -111,22 +118,27 @@ footer {
   background: rgba(115, 96, 131, 0.4);
   color: #fff;
 }
-
-@media screen and (max-width: 800px) {
+/* max-width is < px */
+@media only screen and (max-width: 770px) {
   /* Use flex-direction to stack the navbar, sidebar, and body */
-  main,
+  /* main,
   nav {
     flex-direction: column;
+  } */
+
+  /* class = .     id = #       element = element */
+  .row {
+    display: block;
   }
   /* Make the sidebar stack below the body */
-  aside {
+  /* aside {
     display:inline-block;
     height: 400px;
-  }
+  } */
   /* Change the header background */
   /* Change the navbar and footer background */
-  nav,
+  /* nav,
   footer {
     background-color:rgba(115, 96, 131, 0.4);
-  }
+  } */
 }
