@@ -19,58 +19,51 @@
     <h1 class="text-muted" >Personal Portfolio</h1>
   </header>
   <!-- In this nav bar i included buttons that link to various id portions of the page. It might make more sense as time goes on and the sections get longer, for now the page is so small its a little redundant -->
-  <nav>
-    <p class="text-muted" >What Can I Do?</p>
-  </nav>
+
   <!--  -->
 
   <nav>
-    <a href="#mechanical ">Mechanical</a>
-    <a href="#coding">Coding</a>
-    <a href="#woodworking">Woodworking</a>
-    <a href="#resume">Resume</a>
+
+    <a class="text-muted" href="#coding">Coding</a>
+    <a class="text-muted" href="#mechanical">Mechanical</a>
+    <a class="text-muted" href="#woodworking">Woodworking</a>
+    <a class="text-muted" href="#resume">Resume</a>
   </nav>
 
   <main>
     <!-- The aside has my picture and contact, it flexes into a column as the screen shrinks -->
     <aside>
-      <h2>Mikey Hauser</h2>
-      <p>ASE Master Tech <br>
-        Computer Science Student
+      <div class="row ">
+        <div class="col-sm-6">
+      <h2 class="text-muted" >Mikey Hauser</h2>
+      <p class="text-muted" >ASE Master Mechanic <br>
+            <a class="text-muted" href="https://www.ase.com/test-series">(A1-A9, T1-T8, CDL Licensed)</a><br><br>
+        Computer Science Student<br><br>
+
+        <a class="text-muted" href="mailto: abc@example.com">mikeyhauser@gmail.com</a>
       </p>
-      <div class="mikey"></div>
+     
+    </div>
+    <img id="mikey" src="./Assets/mikeyMountains2.jpg" class="img-thumbnail" alt="Responsive image">
+  </div>
       <p>
-        <a href="mailto: abc@example.com">mikeyhauser@gmail.com</a>
+    
       </p>
+    </div>
     </aside>
 
     <section>
       <!-- In each category i included text and pictures that open into a full picture in a separate tab. In the coding section I made the hover feature make the image larger so the viewer can understand what they are looking at before clicking   -->
-      <h2 class="text-muted" id="mechanical">MECHANICAL REPAIR</h2>
-      <p class="text-muted">For over a decade I have repaired engines, both diesel and gasoline, in an array of industries. From
-        agricultural and trucking equipment in Orange County, NC, to buses and tourism boats in the Galapagos Islands,
-        the world of mechanical repair has been kind in providing me with a myriad of opportunity. It brings me joy to disassemble
-        equipment and fix it. Whether in the field or in a workshop, every mechanical breakdown is a valuable chance to
-        plumb the depths of critical thinking. I owe every shattered bearing my gratitude.</p>
-      <!-- in the flex container, I have put in pictures. the href is what the button links to, and the img src is the button itself -->
 
-      <div class="flex-container">
-        <div class="woodMetal"> <a href="./Assets/injectors.jpg" target="_blank"><img src="./Assets/injectors.jpg"
-              alt="" srcset=""></a></div>
-        <div class="woodMetal"> <a href="./Assets/pumpkin.jpg" target="_blank"><img src="./Assets/pumpkin.jpg" alt=""
-              srcset=""></a></div>
-      </div>
       <h2 class="text-muted" id="coding">COMPUTER PROGRAMMING</h2>
       <p class="text-muted pb-5">
-        I have started on a path to learn the in's and out's of computer programming. By pursuing both a degree in
-        Computer Science and a Participating in the UNC Coding Bootcamp, I aim to develop and polish my skills in this
-        area. This section of my Professional Portfolio Page (constructed with HTML/CSS) displays the projects I have been working on
-        in the Coding Bootcamp.
+        I'm practicing the in's and out's of computer programming (both front and back end.) By pursuing a degree in Computer Science and participating in the UNC Coding Bootcamp, I develop new coding skills and polish the old ones. This section of my Professional Portfolio Page (constructed with HTML/CSS) displays the projects I have been working on in the Coding Bootcamp.
       </p>
 
-      <!-- Portfolio -->
+
       <div class="container ">
         <div class="row ">
+                <!-- Portfolio -->
           <div class="col-sm-6 px-10px lg-3 pb-5">
             <div class="card" style="width: 20rem;">
               <div class="card-body"style="background-color:#F6F3E7">
@@ -82,9 +75,9 @@
                   <img src="./Assets/PortThumb.jpg" class="img-thumbnail" alt="Responsive image">
                 </div>
                 <row class=>
-                  <a href="./Assets/htmlfirst.pdf" class="mb-1 d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">HTML</a>
-                  <a href=" https://mikeyhauser.github.io/PersonalPortfolio/" class="mb-1  d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">Deployed Site</a>
-                  <a href="  https://github.com/mikeyhauser/PersonalPortfolio/" class="mb-1  d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">Repository </a>
+                  <a href="https://github.com/mikeyhauser/PersonalPortfolio/blob/main/index.html" class="mb-1 d-block btn text-muted mx-auto" style="width: 10.5rem;">HTML</a>
+                  <a href=" https://mikeyhauser.github.io/PersonalPortfolio/" class="mb-1  d-block btn text-muted mx-auto" style="width: 10.5rem;">Deployed Site</a>
+                  <a href="  https://github.com/mikeyhauser/PersonalPortfolio/" class="mb-1  d-block btn text-muted  mx-auto" style="width: 10.5rem;">Repository </a>
 
                 </row>
               </div>
@@ -104,9 +97,9 @@
                   <img src="./Assets/pickThumb.jpg" class="img-thumbnail" alt="Responsive image">
                 </div>
                 <row class=>
-                  <a href="#" class="mb-1  d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">Javascript</a>
-                  <a href=" https://joeltbenson.github.io/PickYourPoison/" class="mb-1  d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">Deployed Site</a>
-                  <a href=" https://github.com/JoelTBenson/PickYourPoison" class="mb-1  d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">Repository</a>
+                  <a href="https://github.com/JoelTBenson/PickYourPoison/blob/main/assets/pickyourpoison.js" class="mb-1  d-block btn text-muted  mx-auto" style="width: 10.5rem;">Javascript</a>
+                  <a href=" https://joeltbenson.github.io/PickYourPoison/" class="mb-1  d-block btn text-muted  mx-auto" style="width: 10.5rem;">Deployed Site</a>
+                  <a href=" https://github.com/JoelTBenson/PickYourPoison" class="mb-1  d-block btn text-muted  mx-auto" style="width: 10.5rem;">Repository</a>
                 </row>
 
 
@@ -124,16 +117,73 @@
                   <img src="./Assets/workdayThumb.jpg" class="img-thumbnail" alt="Responsive image">
                 </div>
                 <row class=>
-                  <a href="#" class="mb-1  d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">Javascript Code</a>
-                  <a href=" https://mikeyhauser.github.io/HW5workday/" class=" mb-1 d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">Deplyed Site</a>
-                  <a href=" https://github.com/mikeyhauser/HW5workday" class=" mb-1 d-block btn text-muted bg-dark mx-auto" style="width: 10.5rem;">Repository</a>
+                  <a href="https://github.com/mikeyhauser/HW5workday/blob/main/Develop/time.js" class="mb-1  d-block btn text-muted  mx-auto" style="width: 10.5rem;">Javascript Code</a>
+                  <a href=" https://mikeyhauser.github.io/HW5workday/" class=" mb-1 d-block btn text-muted  mx-auto" style="width: 10.5rem;">Deplyed Site</a>
+                  <a href=" https://github.com/mikeyhauser/HW5workday" class=" mb-1 d-block btn text-muted  mx-auto" style="width: 10.5rem;">Repository</a>
                 </row>
               </div>
             </div>
           </div>
         </div>
-        <h2 id="woodworking">For The Love Woodworking!</h2>
-        <p class="pb-5">After a year and a half of designing and building my own house, people around me have noticed that I have a
+        </div>
+        <!-- MECHANICAL SECTION   -->
+        <h2 id="mechanical" class="text-muted" >MECHANICAL REPAIR</h2>
+        <p  class="text-muted">For over a decade I have repaired engines, both diesel and gasoline, in an array of industries. From
+          agricultural and trucking equipment in Orange County, NC, to buses and tourism boats in the Galapagos Islands,
+          the world of mechanical repair has been kind in providing me with a myriad of opportunity. It brings me joy to disassemble
+          equipment and fix it. Whether in the field or in a workshop, every mechanical breakdown is a valuable chance to
+          plumb the depths of critical thinking. I owe every shattered bearing my gratitude.</p>
+        <!-- in the flex container, I have put in pictures. the href is what the button links to, and the img src is the button itself -->
+        <div class="container ">
+          <div class="row ">
+              <!-- ENGINE REPAIR -->
+              <div class=" col-sm-6 px-30px lg-3 pb-5">
+                <div class="card" style="width: 20rem;">
+                  <div class="card-body "style="background-color:#F6F3E7">
+                    <h5 class="card-title text-muted text-align center "> Engine Repair  </h5>
+                    <!-- <p class="card-text text-muted">This application assists the user to plan their schedule for the day. It makes use of local memory to store input data It also uses API requests to access the time of day and change the featured colors of each hour block to reflect which slots are past, present, and future.</p> -->
+                    <div class=" py-2 flex-container">
+                      <img src="./Assets/injectors.jpg" class="img-thumbnail" alt="Responsive image">
+                    </div>
+                    <row class=>
+                      <p class="mb-1  d-block btn text-muted  mx-auto" style="width: 10.5rem;">Diesel/CDL</p>
+                      <p class=" mb-1 d-block btn text-muted  mx-auto" style="width: 10.5rem;">Gasoline/Auto</p>
+                      <p class=" mb-1 d-block btn text-muted  mx-auto" style="width: 10.5rem;">Hydraulic/Eqmt</p>
+                    </row>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END -->
+              <!-- BODYWORK/DRIVETRAIN -->
+
+
+              <div class=" col-sm-6 px-30px lg-3 pb-5">
+                <div class="card" style="width: 20rem;">
+                  <div class="card-body "style="background-color:#F6F3E7">
+                    <h5 class="card-title text-muted text-align center "> Vehicle Maintenance  </h5>
+                    <p class="card-text text-muted"></p>
+                    <div class=" py-2 flex-container">
+                      <img src="./Assets/pumpkin.jpg" class="img-thumbnail" alt="Responsive image">
+                    </div>
+                    <row class=>
+                      <p class="mb-1  d-block btn text-muted mx-auto" style="width: 10.5rem;">Drivetrain</p>
+                      <p class=" mb-1 d-block btn text-muted  mx-auto" style="width: 10.5rem;">Steering</p  >
+                      <p class=" mb-1 d-block btn text-muted  mx-auto" style="width: 10.5rem;">Basic Servicing</p>
+                    </row>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END -->
+                </div>
+              </div> 
+
+
+
+        <!-- WOODWORKING SECTION -->
+        <h2 id="woodworking">WOODWORKING: section under repair</h2>
+        <!-- <p class="pb-5">After a year and a half of designing and building my own house, people around me have noticed that I have a
           natural ability to work wood. I enjoy taking fallen trees or old wood and using tools to make them into
           furniture, geometric shapes, or custom trim for a house. If you have some fancy wood you’d like to incorporate
           into a creative project, share that dream with me and the chances are I have the tools and skills to make it
@@ -146,9 +196,9 @@
           <div class="woodMetal"> <a href="./Assets/frameWeb.jpg" target="_blank"><img src="./Assets/frameWeb.jpg"
                 alt="" srcset=""></a></div>
         </div>
-        <h2 id="resume">
+        <h2 id="resume"> -->
           <!-- at the end I have included a resume link -->
-          <a href="./Assets/MHweb.pdf" target="_blank">MY RESUME</a>
+          <a id="resume" href="./Assets/MHweb.pdf" target="_blank">MY RESUME</a>
         </h2>
     </section>
 
